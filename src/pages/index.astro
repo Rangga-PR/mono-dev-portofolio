@@ -3,8 +3,9 @@ import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero/Hero.vue";
 import Navbar from "../components/Navbar/Navbar.vue";
 import ExperienceSection from "../components/ExperienceSection/ExperienceSection.vue";
+import WorkSection from "../components/WorkSection/WorkSection.vue";
 import VerticalAccent from "../components/VerticalAccent/VerticalAccent.vue";
-import { experiences } from "../data";
+import { works, experiences } from "../data";
 ---
 
 <Layout title="Rangga Putra R | Software Engineer">
@@ -13,6 +14,7 @@ import { experiences } from "../data";
     <Navbar client:idle />
     <Hero />
     <ExperienceSection data={experiences} />
+    <WorkSection data={works} />
   </main>
 </Layout>
 

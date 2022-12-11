@@ -5,3 +5,11 @@ export interface Experience {
   start: string;
   end: string;
 }
+
+export interface Work {
+  title: string;
+  desc: string;
+  repo: string;
+  url?: string;
+  stacks: string[];
+}
