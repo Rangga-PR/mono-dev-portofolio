@@ -2,7 +2,9 @@
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero/Hero.vue";
 import Navbar from "../components/Navbar/Navbar.vue";
+import ExperienceSection from "../components/ExperienceSection/ExperienceSection.vue";
 import VerticalAccent from "../components/VerticalAccent/VerticalAccent.vue";
+import { experiences } from "../data";
 ---
 
 <Layout title="Rangga Putra R | Software Engineer">
@@ -10,6 +12,7 @@ import VerticalAccent from "../components/VerticalAccent/VerticalAccent.vue";
     <VerticalAccent />
     <Navbar client:idle />
     <Hero />
+    <ExperienceSection data={experiences} />
   </main>
 </Layout>
 
