@@ -1,0 +1,48 @@
+---
+import "@fontsource/prompt/100.css";
+import "@fontsource/prompt/500.css";
+import "@fontsource/prompt/900.css";
+import "@fontsource/ibm-plex-mono/100.css";
+import "@fontsource/ibm-plex-mono/500.css";
+
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>{title}</title>
+  </head>
+  <body class="bg-primary dark:bg-secondary">
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  html {
+    font-family: "Prompt", system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  p {
+    font-weight: 100;
+  }
+
+  summary {
+    list-style: none;
+  }
+</style>
