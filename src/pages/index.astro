@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar/Navbar.vue";
+---
+
+<Layout title="Rangga Putra R | Software Engineer">
+  <main>
+    <Navbar client:idle />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    max-width: 1000px;
+  }
+</style>
