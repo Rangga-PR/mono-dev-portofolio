@@ -1,8 +1,6 @@
 <template>
-  <details>
-    <summary>
-      <Burger h="40" w="40" :open="expand" @click="handleExpand" />
-    </summary>
+  <div>
+    <Burger h="40" w="40" :open="expand" @click="handleExpand" />
     <nav
       class="flex flex-col px-4 py-6 fixed top-14 items-end z-10 shadow-md transition-all duration-250 ease-in-out bg-primary dark:bg-secondary w-full"
       :class="expand ? 'left-0' : 'left-[-100vw]'"
@@ -25,7 +23,7 @@
         <Github class="ml-2" w="18" h="18" />
       </Button>
     </nav>
-  </details>
+  </div>
 </template>
 
 <script setup lang="ts">
