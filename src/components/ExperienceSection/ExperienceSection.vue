@@ -1,6 +1,6 @@
 <template>
   <Section id="experiences" left-facing title="01" subtitle="Where I've work">
-    <div class="flex flex-col items-center p-4">
+    <div class="flex flex-col items-center p-4 h-[700px] w-full">
       <Timeline :data="data" />
     </div>
   </Section>
