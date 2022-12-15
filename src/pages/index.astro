@@ -13,9 +13,9 @@ import { works, experiences } from "../data";
   <main>
     <VerticalAccent />
     <Navbar client:idle />
-    <Hero />
-    <ExperienceSection data={experiences} />
-    <WorkSection data={works} />
+    <Hero client:load />
+    <ExperienceSection data={experiences} client:visible />
+    <WorkSection data={works} client:visible />
     <Footer />
   </main>
 </Layout>
