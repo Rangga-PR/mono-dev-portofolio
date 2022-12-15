@@ -1,6 +1,6 @@
 <template>
   <Section id="works" title="02" subtitle="What I've Built">
-    <div ref="workRef">
+    <div ref="workRef" class="min-h-[1140px] w-full">
       <Transition :duration="4000">
         <div
           class="grid grid-cols-[repeat(auto-fit,minmax(276px,1fr))] gap-4 p-4"
