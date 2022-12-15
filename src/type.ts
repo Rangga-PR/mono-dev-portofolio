@@ -13,3 +13,5 @@ export interface Work {
   url?: string;
   stacks: string[];
 }
+
+export type Element = HTMLElement | null | undefined;
