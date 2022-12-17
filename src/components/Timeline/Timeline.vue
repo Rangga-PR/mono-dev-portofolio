@@ -43,7 +43,7 @@ const onScreen = useIsIntersecting(timelineRef, { once: true });
 <style scoped>
 .v-enter-from,
 .v-leave-to {
-  opacity: 0;
+  opacity: 0.01;
   transform: translateY(40px);
 }
 </style>

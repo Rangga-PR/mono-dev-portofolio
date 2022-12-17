@@ -67,7 +67,7 @@ onMounted(() => {
 
 .v-enter-from,
 .v-leave-to {
-  opacity: 0;
+  opacity: 0.01;
   transform: scale(0) rotate(180deg);
 }
 </style>

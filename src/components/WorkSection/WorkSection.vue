@@ -1,7 +1,7 @@
 <template>
   <Section id="works" title="02" subtitle="What I've Built">
     <div ref="workRef" class="min-h-[1140px] w-full">
-      <Transition :duration="4000">
+      <Transition :duration="500 + (props.data.length - 1 * 250)">
         <div
           class="grid grid-cols-[repeat(auto-fit,minmax(276px,1fr))] gap-4 p-4"
           v-show="onScreen"
@@ -40,7 +40,7 @@ const onScreen = useIsIntersecting(workRef, { once: true });
 
 .v-enter-from .card,
 .v-leave-to .card {
-  opacity: 0;
+  opacity: 0.01;
   transform: scale(0);
 }
 </style>
