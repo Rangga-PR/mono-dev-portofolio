@@ -2,7 +2,7 @@
   <div>
     <Burger h="40" w="40" :open="expand" @click="handleExpand" />
     <nav
-      class="flex flex-col px-4 py-6 fixed top-14 items-end z-10 shadow-md transition-all duration-250 ease-in-out bg-primary dark:bg-secondary w-full"
+      class="flex flex-col px-4 py-6 fixed top-14 items-end z-10 shadow-md transition-all duration-500 ease-in-out bg-primary dark:bg-secondary w-full"
       :class="expand ? 'left-0' : 'left-[-100vw]'"
     >
       <Button type="a" href="#about" @click="handleExpand">About</Button>
