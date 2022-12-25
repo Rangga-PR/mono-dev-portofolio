@@ -5,6 +5,7 @@
     viewBox="0 0 25 25"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    data-testid="email-icon"
   >
     <path
       :class="fillClasses"
