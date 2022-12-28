@@ -4,7 +4,7 @@
       <div
         v-show="onScreen"
         class="flex flex-col p-4 mb-8"
-        :class="classes.text"
+        :class="classes?.text"
       >
         <Text type="h2" class="mb-1 text" :class="transitionClasses">{{
           props.title
@@ -13,11 +13,11 @@
           <div
             id="arrow"
             class="h-1 w-[70%] absolute bg-secondary dark:bg-primary my-1"
-            :class="[classes.arrowHand, transitionClasses]"
+            :class="[classes?.arrowHand, transitionClasses]"
           >
             <Arrow
               class="absolute bottom-[-14px]"
-              :class="[classes.arrowHead, transitionClasses]"
+              :class="[classes?.arrowHead, transitionClasses]"
               h="32"
               w="25"
             />
