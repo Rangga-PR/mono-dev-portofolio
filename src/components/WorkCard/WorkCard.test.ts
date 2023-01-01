@@ -1,5 +1,5 @@
 import { test, expect } from "vitest";
-import { mount, VueWrapper } from "@vue/test-utils";
+import { mount } from "@vue/test-utils";
 import WorkCard from "./WorkCard.vue";
 
 const mockData = {
