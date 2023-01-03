@@ -11,4 +11,7 @@ test("render vertical accent", () => {
   expect(wrapper.findComponent("[data-testid=github-icon]")).toBeInstanceOf(
     VueWrapper
   );
+  expect(wrapper.findComponent("[data-testid=dev-icon]")).toBeInstanceOf(
+    VueWrapper
+  );
 });

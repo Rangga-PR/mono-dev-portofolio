@@ -22,6 +22,16 @@
         Github
         <Github class="ml-2" w="18" h="18" />
       </Button>
+      <Button
+        class="mt-6"
+        type="a"
+        :href="dev"
+        target="__blank"
+        @click="handleExpand"
+      >
+        DEV
+        <Dev class="ml-2" w="24" h="24" />
+      </Button>
     </nav>
   </div>
 </template>
@@ -31,7 +41,8 @@ import { ref } from "vue";
 import Burger from "../common/Icon/Burger.vue";
 import Button from "../common/Button/Button.vue";
 import Github from "../common/Icon/Github.vue";
-import { github } from "../../data";
+import Dev from "../common/Icon/Dev.vue";
+import { github, dev } from "../../data";
 
 const expand = ref(false);
 

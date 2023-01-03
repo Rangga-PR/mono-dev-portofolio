@@ -12,8 +12,12 @@
       <Mail w="20" h="20" />
     </a>
 
-    <a :href="github" target="_blank">
+    <a class="mb-4" :href="github" target="_blank">
       <Github w="20" h="20" />
+    </a>
+
+    <a :href="dev" target="_blank">
+      <Dev w="24" h="24" />
     </a>
 
     <div class="mt-2" :class="barClasses" />
@@ -25,7 +29,8 @@ import { ref } from "vue";
 import Text from "../common/Text/Text.vue";
 import Github from "../common/Icon/Github.vue";
 import Mail from "../common/Icon/Mail.vue";
-import { email, github } from "../../data";
+import Dev from "../common/Icon/Dev.vue";
+import { email, github, dev } from "../../data";
 
 const fixedClasses =
   "hidden lg:flex flex-col items-center fixed z-10 bg-primary dark:bg-secondary px-1";
