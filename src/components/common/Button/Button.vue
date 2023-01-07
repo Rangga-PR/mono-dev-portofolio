@@ -19,7 +19,7 @@ const commonClasses =
 
 const props = withDefaults(
   defineProps<{
-    type: ButtonType;
+    type?: ButtonType;
   }>(),
   { type: "button" }
 );
